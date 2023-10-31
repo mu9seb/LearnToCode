@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodging</title>
+
+    <!-- Bootstrap v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Playfair Display Regular 400 Italic Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-light bg-gradient" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand px-3" href="./index.html">
+              <span class="display-6">Royal Recursion</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarColor01"
+              aria-controls="navbarColor01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html"
+                    >Home
+                    <span class="visually-hidden">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./lodging.html">Lodging</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="./dining.html">Dining</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./activities.html">Activities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./carRentalsPage.html">Car Rentals</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mt-5 pt-5 mx-5 px-5">
+            <fieldset>
+                <h1>Order Form</h1>
+
+                <div class="form-group mx-3 my-3">
+                    <label for="emailInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group mx-3 my-3">
+                    <label for="firstNameInput" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="firstNameInput" placeholder="First Name">
+                </div>
+                <div class="form-group mx-3 my-3">
+                    <label for="orderDateInput" class="form-label">Check-in Date</label>
+                    <input type="date" class="form-control" id="orderDateInput">
+                </div>
+                <div class="form-group mx-3 my-3">
+                    <label for="numNightsStayInput" class="form-label">Number of Nights</label>
+                    <input type="number" class="form-control" id="numNightsStayInput">
+                </div>
+
+                <fieldset class="form-group my-5">
+                    <legend class="display-6">Room Type</legend>
+                    <div class="form-check mx-3 mt-3">
+                        <input class="form-check-input" type="radio" name="roomTypeRadio" id="roomTypeQueen" value="queen">
+                        <label class="form-check-label" for="roomTypeQueen">
+                            Queen - $150/Night
+                        </label>
+                    </div>
+                    <div class="form-check mx-3 ">
+                        <input class="form-check-input" type="radio" name="roomTypeRadio" id="roomTypeKing" value="king">
+                        <label class="form-check-label" for="roomTypeKing">
+                            King - $250/Night
+                        </label>
+                    </div>
+                    <div class="form-check mx-3">
+                        <input class="form-check-input" type="radio" name="roomTypeRadio" id="roomTypeSuite" value="suite">
+                        <label class="form-check-label" for="roomTypeSuite">
+                            2-Bedroom Suite - $350/Night
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend class="mt-4 display-6">Guests</legend>
+                    <div class="row pl-3">
+                        <div class="form-check col-lg-4 col-md-6 col-sm-12">
+                            <input class="form-check-input" type="checkbox" value="" id="toppingCheese">
+                            <label class="form-check-label" for="toppingCheese">
+                                Extra Cheese - $1.00
+                            </label>
+                        </div>
+                        <div class="form-check col-lg-4 col-md-6 col-sm-12">
+                            <input class="form-check-input" type="checkbox" value="" id="toppingPepperoni">
+                            <label class="form-check-label" for="toppingPepperoni">
+                                Pepperoni - $1.00
+                            </label>
+                        </div>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group my-5">
+                    <legend class="display-6">Discount</legend>
+                    <div class="form-check mx-3 mt-3">
+                        <input class="form-check-input" type="radio" name="discountTypeRadio" id="discountTypeNone" value="none" checked>
+                        <label class="form-check-label" for="roomTypeQueen">
+                            None
+                        </label>
+                    </div>
+                    <div class="form-check mx-3 ">
+                        <input class="form-check-input" type="radio" name="discountTypeRadio" id="discountTypeSenior" value="senior">
+                        <label class="form-check-label" for="discountTypeSenior">
+                            AAA/Senior (10%)
+                        </label>
+                    </div>
+                    <div class="form-check mx-3">
+                        <input class="form-check-input" type="radio" name="discountTypeRadio" id="discountTypeMilitary" value="military">
+                        <label class="form-check-label" for="discountTypeMilitary">
+                            Military (20%)
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button class="btn btn-secondary" id="orderButton">Order</button>
+            </fieldset>
+        </section>
+
+        <section class="mt-4 pt-4 border-top">
+            <h1>Order Details</h1>
+            <div>Name: <span id="nameDisplay"></span></div>
+            <div>Email: <span id="emailDisplay"></span></div>
+            <div>Order Date: <span id="orderDateDisplay"></span></div>
+            <div>Order Type: <span id="orderTypeDisplay"></span></div>
+            <table class="table table-hover mt-3">
+                <thead class="thead-light">
+                    <tr>
+                        <th class="bg-primary text-light">Option</th>
+                        <th class="bg-primary text-light">Cost</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td class="w-75 text-end pr-5">Size: <span id="sizeDisplay">Medium</span></td>
+                    <td id="sizePriceCell">11.99</td>
+                </tr>
+                <tr id="extraCheeseRow" style="display: none;">
+                    <td class="w-75 text-end pr-5">Extra Cheese</td>
+                    <td>1.00</td>
+                </tr>
+                <tr id="pepperoniRow" style="display: none;">
+                    <td class="w-75 text-end pr-5">Pepperoni</td>
+                    <td>1.00</td>
+                </tr>
+                <tr id="hamRow" style="display: none;">
+                    <td class="w-75 text-end pr-5">Ham</td>
+                    <td>1.00</td>
+                </tr>
+                <tr id="sausageRow" style="display: none;">
+                    <td class="w-75 text-end pr-5">Sausage</td>
+                    <td>1.00</td>
+                </tr>
+                <tr id="chickenRow" style="display: none;">
+                    <td class="w-75 text-end pr-5">Chicken</td>
+                    <td>1.00</td>
+                </tr>
+                <tr id="pineappleRow" style="display: none;">
+                    <td class="w-75 text-end pr-5">Pineapple</td>
+                    <td>1.00</td>
+                </tr>
+                <tr class="table-warning">
+                    <th class="w-75 text-end pr-5">Total</th>
+                    <th id="totalPriceDisplay">11.99</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer class="container-fluid p-4 bg-light">&copy; Copyright - The Pizza Shop - 2023</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>

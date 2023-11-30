@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <title>Finances</title>
+
+    <!-- Importing Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Importing Material Design for Bootstrap 5 -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Font Family -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navigation Bar-->
+      <nav
+        class="navbar fixed-top navbar-expand-lg bg-light"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+           <h1 class="display-6 text-center pt-2">Financial Calculators</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"
+                  >Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="#mortgageCalculator" >Mortgage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./goods.html">CD</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid my-5 py-5">
+      
+      <!-- Mortgage Calculator -->
+      <h3 class="display-4 text-success text-center" id="mortgageCalculator">Mortgage Calculator</h3>
+      
+      <div class="border border-outline-danger py-3 text-center">
+        <p> Principal ($): <input type="text" id="principalInput"></input> </p>
+        <p> Interest Rate (%): <input type="text" id="interestRateInput"></input> </p>
+        <p> Loan Length (yrs): <input type="text" id="loanLengthInput"></input> </p>
+
+        <button class="btn bg-dark text-light" id="addBtn" onclick="mortgageCalculator()">Calculate</button>
+
+        <p class="mt-3">Monthly Payment ($): <input id="monthlyPaymentField"></p>
+        <p class="mt-3">Total Interest Paid ($): <input id="totalInterestPaidField"></p>
+      </div>
+    
+
+      <!-- CD Calculator -->
+      <div class="table-responsive">
+        <table class="table table-striped align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th scope="row">CD Calculator</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+    </main>
+
+    <!-- Calculators JS -->
+  <script src="./Workshops/scripts/index.js"></script>
+
+    <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To DOs</title>
+
+    <!-- Bootstrap 5 JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- MDB CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet"/>
+    <!-- MDB JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <!-- APP Script -->
+    <script src="/scripts/app.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand navbar-light bg-light bg-gradient mb-5">
+            <div class="container-fluid">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="todo.html">To DOs</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section name="User Input">
+            <div class="container p-5 m-5">
+                <h3 class="text-center">S P A C E</h3>
+            </div>
+            <div class="container">
+                <div class="d-flex align-items-betweeen justify-content-around">
+                    <select name="userNameSelectForm" id="userNameInput" class="form-select-sm">
+                        <option selected>Choose a User</option>
+                    </select>
+                    <button id="submitButton" class="btn btn-danger">Grab Users</button>
+                </div>
+            </div>
+            <div class="container">
+                <div id="userNameDisplay" class="mt-5 border-top me-auto p-5">
+                    senile
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

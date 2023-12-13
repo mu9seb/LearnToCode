@@ -4,20 +4,16 @@ function travelChessboard(s) {
 // point A always up and to the left of point B --> x1 < x2, y1 < y2
 
 // get and store coordinates from given string
-    const sampleRegEx = /\d/g; // find all (gloabl match) digits
+    const digRegEx = /\d/g; // find all (gloabl match) digits
     const [x1, y1, x2, y2] = Array.from(s.match(sampleRegEx).map(Number));
     let rows = y2-y1+1, cols = x2-x1+1;
     let factorialRows, factorialCols;
 
-    if (rows === 1) {
-        return 1;
-    }
-    while (rows > 1) {
-        rows--;
-        factorialRows *= rows;
-    } 
+    if (rows === 1) return 1;
+
     return factorialRows;
+    
 // from coord values, calculate number of rows & cols
-// number of possible paths = (rows!) / (cols! * (rows-cols)!)
+// number of possible paths = (rows + cols)! / (cols * (rows-cols))!
 }
 console.log(travelChessboard(s));

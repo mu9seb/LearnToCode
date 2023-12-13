@@ -18,36 +18,43 @@
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand navbar-light bg-light bg-gradient mb-5">
+        <nav class="navbar sticky-top navbar-expand-lg bg-danger bg-gradient">
             <div class="container-fluid">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="todo.html">To DOs</a>
-                  </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="todo.html">To Do's</a>
+                        </li>
+                      </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section name="User Input">
-            <div class="container p-5 m-5">
+        <section name="UserInput">
+            <div class="container p-5">
                 <h3 class="text-center">S P A C E</h3>
             </div>
             <div class="container">
                 <div class="d-flex align-items-betweeen justify-content-around">
-                    <select name="userNameSelectForm" id="userNameInput" class="form-select-sm">
-                        <option selected>Choose a User</option>
-                    </select>
+                    <form action="">
+                        <label for="toDoID">Enter a ToDo id:</label>
+                        <input type="text" name="toDoID" id="toDoID">
+                    </form>
                     <button id="submitButton" class="btn btn-danger">Grab Users</button>
                 </div>
             </div>
             <div class="container">
                 <div id="userNameDisplay" class="mt-5 border-top me-auto p-5">
-                    senile
+                    <table class="table table-striped">
+                    </table>
                 </div>
             </div>
         </section>
